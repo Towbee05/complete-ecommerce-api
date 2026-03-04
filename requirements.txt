@@ -1,0 +1,9 @@
+django
+djangorestframework
+python-decouple
+drf-spectacular
+pytest-django
+psycopg2-binary
+Faker
+locust
+django-redis
