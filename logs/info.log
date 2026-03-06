@@ -79773,3 +79773,93 @@ INFO 2026-03-06 00:00:03,370 autoreload trigger_reload /app/authentication/views
 INFO 2026-03-06 00:00:03,370 autoreload trigger_reload /app/authentication/views.py changed, reloading.
 INFO 2026-03-06 00:00:58,571 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-06 00:00:58,571 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:05:50,152 views create User Login process started
+ERROR 2026-03-06 00:05:50,637 views create Unexpected error during login
+Traceback (most recent call last):
+  File "/app/authentication/views.py", line 57, in create
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 1056, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class UserLoginSerializer missing "Meta" attribute
+ERROR 2026-03-06 00:05:50,968 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:05:50,968 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:05:50,999 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+ERROR 2026-03-06 00:05:50,999 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+INFO 2026-03-06 00:07:01,721 autoreload trigger_reload /app/authentication/serializers.py changed, reloading.
+INFO 2026-03-06 00:07:01,721 autoreload trigger_reload /app/authentication/serializers.py changed, reloading.
+INFO 2026-03-06 00:07:54,979 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:07:54,979 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:11:25,939 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:11:25,939 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:12:30,570 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:12:30,570 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:13:42,925 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:13:42,925 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:14:00,549 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:14:00,549 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:14:13,714 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:14:13,714 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:14:19,238 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:14:19,238 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:14:24,991 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:14:24,991 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:14:29,878 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:14:29,878 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:19:45,057 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:19:45,057 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 00:49:16,940 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:49:16,940 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:49:37,803 views create User Login process started
+ERROR 2026-03-06 00:49:42,640 views create Unexpected error during login
+Traceback (most recent call last):
+  File "/app/authentication/views.py", line 59, in create
+    user = serializer.get("user")
+           ^^^^^^^^^^^^^^
+AttributeError: 'UserLoginSerializer' object has no attribute 'get'
+ERROR 2026-03-06 00:49:42,665 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:49:42,665 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:49:42,678 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+ERROR 2026-03-06 00:49:42,678 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+INFO 2026-03-06 00:51:38,235 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 00:51:38,235 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 00:51:59,064 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:51:59,064 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:52:09,306 views create User Login process started
+ERROR 2026-03-06 00:52:15,724 views create Unexpected error during login
+Traceback (most recent call last):
+  File "/app/authentication/views.py", line 60, in create
+    refresh = RefreshToken.for_user(user=user)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/tokens.py", line 227, in for_user
+    user_id = getattr(user, api_settings.USER_ID_FIELD)
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR 2026-03-06 00:52:17,316 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:52:17,316 log log_message Internal Server Error: /api/v1/auth/login/
+ERROR 2026-03-06 00:52:17,480 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+ERROR 2026-03-06 00:52:17,480 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 500 40
+INFO 2026-03-06 00:53:54,533 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 00:53:54,533 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 00:54:10,008 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:54:10,008 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:55:32,682 autoreload trigger_reload /app/authentication/urls.py changed, reloading.
+INFO 2026-03-06 00:55:32,682 autoreload trigger_reload /app/authentication/urls.py changed, reloading.
+INFO 2026-03-06 00:55:41,229 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:55:41,229 autoreload run_with_reloader Watching for file changes with StatReloader

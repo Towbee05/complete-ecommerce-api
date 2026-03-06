@@ -7,10 +7,11 @@ from django.db import transaction
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from rest_framework.generics import CreateAPIView
-from .serializers import UserSignupSerializer, UserLoginSerializer
+from .serializers import UserSignupSerializer
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
 from .throttling import AuthenticationBurstThrottle, AuthenticationSustainedThrottle
+from rest_framework_simplejwt.tokens import RefreshToken
 import logging
 import json
 
@@ -46,17 +47,3 @@ class UserSignupView(CreateAPIView):
             logger.exception("Unexpected error during signup")
             return Response({"details": "Some server error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
-class UserLoginView(CreateAPIView):
-    serializer_class = UserLoginSerializer
-    queryset = User.objects.all()
-
-    def create(self, request, *args, **kwargs) -> Response:
-        try:
-            logger.info("User Login process started")
-            serializer = self.get_serializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            return Response(data=serializer.data, status=status.HTTP_200_OK)
-        except Exception as e:
-            print(e)
-            logger.exception("Unexpected error during login")
-            return Response({"details": "Some server error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

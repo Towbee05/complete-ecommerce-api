@@ -17,19 +17,3 @@ class UserSignupSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return user
-
-class UserLoginSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField()
-    password = serializers.CharField()
-
-    def validate(self, data):
-        email = data["email"]
-        password = data["password"]
-        # Authenticate and validate user
-        user = authenticate(email=email, password=password)
-        
-        # throw error if user does not exist
-        if user is None:
-            raise serializers.ValidationError("Provided credential is invalid")
-        data["user"] = user
-        return user

@@ -7,3 +7,4 @@ psycopg2-binary
 Faker
 locust
 django-redis
+djangorestframework_simplejwt
