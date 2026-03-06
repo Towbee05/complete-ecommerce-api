@@ -5,7 +5,6 @@ class LocustUser(HttpUser):
     wait_time = between(1, 5)
     @task
     def signup(self):
-        print(self.key)
         fake = Faker()
         url = '/api/v1/auth/signup/'
         payload = {
