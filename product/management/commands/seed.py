@@ -9,6 +9,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         self.stdout.write("Seeding category into DB ... 🚀⌛")
+        populate_category()
+        self.stdout.write("Seeding completed ... 🎉✅")
 
 
 def clear_table():
@@ -17,6 +19,7 @@ def clear_table():
     Category.objects.all().delete()
 
 def populate_category():
+    # Implement array to keep track of all categories to be added to the database
     categories = [
         "Motors and vehicles parts",
         "Electronics",
@@ -37,3 +40,9 @@ def populate_category():
         "Real Estate",
         "Specialty Services"
     ]
+
+    # Run loop to add all items to the database
+    for cat in categories:
+        category = Category(name=cat)
+        category.save()
+        logger.info("{} added to database", format(category))
