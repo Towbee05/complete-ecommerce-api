@@ -14,4 +14,14 @@ class AuthenticationSustainedThrottle(SimpleRateThrottle):
         identity = self.get_ident(request)
 
         return f"auth_sustained_{identity}"
-    
+
+class AuthenticationAccountThrottle(SimpleRateThrottle):
+    scope = "authentication_account"
+
+    def get_cache_key(self, request, view):
+        email = request.data.get("email")
+
+        if not email:
+            return None
+        
+        return f"auth_account_{email}"

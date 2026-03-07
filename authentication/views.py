@@ -1,6 +1,15 @@
 # TODO: 1. Add test for signup view to ensure it works as expected and handles edge cases properly
 # TODO: 2. Add rate limiting API for signup view to prevent abuse
 # TODO: 3. Add email verification to make sure new users are legitimate
+# TODO: 4. Ad4. Add google Sign-in
+# TODO: 5. Ad4. Add github Sign-in
+
+# !Did the following.
+'''
+1. Added an authentication endpoint
+2. Addded a product catalog
+3. Seeded categories into the database
+'''
 
 from django.shortcuts import render
 from django.db import transaction
@@ -11,7 +20,7 @@ from .serializers import UserSignupSerializer
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
 from .throttling import AuthenticationBurstThrottle, AuthenticationSustainedThrottle
-from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 import logging
 import json
 
@@ -47,3 +56,8 @@ class UserSignupView(CreateAPIView):
             logger.exception("Unexpected error during signup")
             return Response({"details": "Some server error occurred"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
+class UserLoginView(TokenObtainPairView):
+    throttle_classes = [
+        AuthenticationBurstThrottle,
+        AuthenticationSustainedThrottle
+        ]

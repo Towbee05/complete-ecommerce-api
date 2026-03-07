@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_spectacular',
-    'authentication'
+    'authentication',
+    'product'
 ]
 
 MIDDLEWARE = [
@@ -144,7 +145,8 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_THROTTLE_RATES': {
         "authentication_burst": '30/s',
-        "authentication_sustained": '20/m'
+        "authentication_sustained": '20/m',
+        "authentication_account": '30/hr'
     },
     'DEFAULT_PERMISSION_CLASS' : (
         'rest_framwork.permissions.IsAuthenticated'

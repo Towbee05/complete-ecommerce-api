@@ -79863,3 +79863,125 @@ INFO 2026-03-06 00:55:32,682 autoreload trigger_reload /app/authentication/urls.
 INFO 2026-03-06 00:55:32,682 autoreload trigger_reload /app/authentication/urls.py changed, reloading.
 INFO 2026-03-06 00:55:41,229 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-06 00:55:41,229 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 00:56:56,997 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+INFO 2026-03-06 00:56:56,997 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+WARNING 2026-03-06 00:57:20,897 log log_message Bad Request: /api/v1/auth/login/refresh/
+WARNING 2026-03-06 00:57:20,897 log log_message Bad Request: /api/v1/auth/login/refresh/
+WARNING 2026-03-06 00:57:20,900 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 400 39
+WARNING 2026-03-06 00:57:20,900 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 400 39
+WARNING 2026-03-06 00:58:02,222 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:02,222 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:02,243 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+WARNING 2026-03-06 00:58:02,243 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+INFO 2026-03-06 00:58:30,265 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+INFO 2026-03-06 00:58:30,265 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+WARNING 2026-03-06 00:58:38,018 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:38,018 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:38,024 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+WARNING 2026-03-06 00:58:38,024 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+WARNING 2026-03-06 00:58:49,554 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:49,554 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-06 00:58:49,562 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+WARNING 2026-03-06 00:58:49,562 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+INFO 2026-03-06 00:59:08,847 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+INFO 2026-03-06 00:59:08,847 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 491
+INFO 2026-03-06 00:59:44,767 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 245
+INFO 2026-03-06 00:59:44,767 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 245
+INFO 2026-03-06 01:04:00,171 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:04:00,171 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:04:15,495 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:04:15,495 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:04:39,312 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:04:39,312 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:04:43,613 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:04:43,613 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:05:25,366 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:05:25,366 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:05:30,998 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:05:30,998 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:06:01,396 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:06:01,396 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:06:06,591 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:06:06,591 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:06:49,051 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:06:49,051 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:06:54,176 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:06:54,176 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:08:19,062 autoreload trigger_reload /app/authentication/throttling.py changed, reloading.
+INFO 2026-03-06 01:08:19,062 autoreload trigger_reload /app/authentication/throttling.py changed, reloading.
+INFO 2026-03-06 01:08:44,927 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:08:44,927 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:10:08,796 autoreload trigger_reload /app/authentication/throttling.py changed, reloading.
+INFO 2026-03-06 01:10:08,796 autoreload trigger_reload /app/authentication/throttling.py changed, reloading.
+INFO 2026-03-06 01:10:14,550 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:10:14,550 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:10:52,687 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 01:10:52,687 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-06 01:10:59,624 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:10:59,624 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-06 01:12:05,860 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-06 01:12:05,860 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-06 01:12:06,658 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+WARNING 2026-03-06 01:12:06,658 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+INFO 2026-03-06 01:12:34,083 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:12:34,083 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-06 01:13:00,678 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 01:13:00,678 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 23:43:46,156 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-06 23:43:46,156 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 00:46:23,324 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-07 00:46:23,324 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-07 00:46:34,846 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 00:46:34,846 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 00:53:19,418 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 00:53:19,418 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 00:53:29,518 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 00:53:29,518 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:08:49,851 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:08:49,851 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:09:12,183 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:09:12,183 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:09:46,813 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:09:46,813 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:10:02,586 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:10:02,586 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:10:32,893 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:10:32,893 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:10:36,999 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:10:36,999 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:11:07,756 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:11:07,756 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:11:11,297 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:11:11,297 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:21:57,904 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:21:57,904 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:22:06,189 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:22:06,189 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:25:06,962 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:25:06,962 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:25:34,116 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:25:34,116 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:26:04,278 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:26:04,278 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 01:26:11,949 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 01:26:11,949 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:25:31,014 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:25:31,014 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:26:29,244 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:26:29,244 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:56:22,795 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:56:22,795 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:56:40,504 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:56:40,504 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:57:32,462 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:57:32,462 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 02:57:36,752 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 02:57:36,752 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 03:01:01,184 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 03:01:01,184 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 03:01:12,748 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 03:01:12,748 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 03:43:43,362 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-07 03:43:43,362 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-07 03:43:58,176 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 03:43:58,176 autoreload run_with_reloader Watching for file changes with StatReloader
