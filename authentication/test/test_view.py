@@ -39,3 +39,36 @@ class UserRegistrationView(APITestCase):
         self.assertEqual(response.status_code, 400)
         self.assertIn("email", response.data)
 
+
+class UserLoginView(APITestCase):
+    def setUp(self) -> None:
+        self.client = APIClient()
+        self.url = reverse("authentication:auth_login")
+        self.user = User.objects.create_user(
+             email= "testemail@gmail.com",
+            password="testpassword"
+        )
+
+    def test_login_success(self):
+        payload = {
+            "email" : "testemail@gmail.com",
+            "password" : "testpassword"
+        }
+
+        response = self.client.post(self.url, data=payload, format='json')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("access", response.data)
+        self.assertIn("refresh", response.data)
+
+    def test_login_failure(self):
+        faker = Faker()
+        payload = {
+            "email": faker.email(),
+            "password": faker.password()
+        }
+
+        response = self.client.post(self.url, data=payload, format='json')
+
+        self.assertEqual(response.status_code, 401)
+        self.assertIn("detail", response.data)

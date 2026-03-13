@@ -18,10 +18,21 @@ from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
+def trigger_error(request):
+    divide_by_zero = 1/0
+
 urlpatterns = [
+    # API paths
     path('admin/', admin.site.urls),
     path('api/v1/auth/', include("authentication.urls")),
+    path('api/v1/product/', include("product.urls")),
+    path('api/v1/carts/', include("cart.urls")),
+
+    # OpenAPI paths
     path('api/v1/schema', SpectacularAPIView.as_view(), name="schema"),
     path('api/v1/docs', SpectacularSwaggerView.as_view(), name="docs"),
-    path('api/v1/redoc', SpectacularRedocView.as_view(), name="redoc")
+    path('api/v1/redoc', SpectacularRedocView.as_view(), name="redoc"),
+    
+    # Sentry paths
+    path('sentry-debug/', trigger_error)
 ]

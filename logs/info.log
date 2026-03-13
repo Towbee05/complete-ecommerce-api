@@ -80075,3 +80075,2629 @@ INFO 2026-03-07 04:11:06,573 autoreload run_with_reloader Watching for file chan
 INFO 2026-03-07 04:11:06,573 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-07 04:19:06,418 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-07 04:19:06,418 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:34:31,534 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-07 12:34:31,534 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-07 12:34:56,035 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:34:56,035 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:51:48,973 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:51:48,973 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:53:44,982 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-07 12:53:44,982 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-07 12:53:50,760 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:53:50,760 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-07 12:55:54,130 log log_message Internal Server Error: /api/v1/product
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-07 12:55:54,130 log log_message Internal Server Error: /api/v1/product
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-07 12:55:54,169 log log_message "POST /api/v1/product HTTP/1.1" 500 64175
+ERROR 2026-03-07 12:55:54,169 log log_message "POST /api/v1/product HTTP/1.1" 500 64175
+ERROR 2026-03-07 12:56:34,009 log log_message Internal Server Error: /api/v1/product
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-07 12:56:34,009 log log_message Internal Server Error: /api/v1/product
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-07 12:56:34,066 log log_message "POST /api/v1/product HTTP/1.1" 500 64175
+ERROR 2026-03-07 12:56:34,066 log log_message "POST /api/v1/product HTTP/1.1" 500 64175
+WARNING 2026-03-07 12:57:47,161 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-07 12:57:47,161 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-07 12:57:47,167 log log_message "POST /api/v1/product/ HTTP/1.1" 400 81
+WARNING 2026-03-07 12:57:47,167 log log_message "POST /api/v1/product/ HTTP/1.1" 400 81
+INFO 2026-03-07 12:58:31,359 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 12:58:31,359 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-07 12:58:50,935 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 12:58:50,935 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 13:07:26,189 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 13:07:26,189 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-07 13:07:38,033 log log_message "POST /api/v1/product/ HTTP/1.1" 201 316
+INFO 2026-03-07 13:07:38,033 log log_message "POST /api/v1/product/ HTTP/1.1" 201 316
+INFO 2026-03-08 16:44:13,065 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 16:44:13,065 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-08 16:48:17,057 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-08 16:48:17,057 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-08 16:48:17,120 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+WARNING 2026-03-08 16:48:17,120 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+INFO 2026-03-08 16:55:16,247 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 16:55:16,247 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 16:55:19,472 log log_message "GET /api/v1/product/ HTTP/1.1" 200 318
+INFO 2026-03-08 16:55:19,472 log log_message "GET /api/v1/product/ HTTP/1.1" 200 318
+INFO 2026-03-08 16:59:38,310 log log_message "POST /api/v1/product/ HTTP/1.1" 201 361
+INFO 2026-03-08 16:59:38,310 log log_message "POST /api/v1/product/ HTTP/1.1" 201 361
+INFO 2026-03-08 16:59:52,614 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 16:59:52,614 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 16:59:52,771 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-08 16:59:52,771 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-08 17:00:24,578 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 17:00:24,578 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-08 17:00:24,688 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-08 17:00:24,688 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-08 17:06:14,880 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:06:14,880 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:06:35,182 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 17:06:35,182 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 17:20:46,150 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:20:46,150 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:21:11,315 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 17:21:11,315 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 17:22:50,565 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:22:50,565 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-08 17:22:55,021 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-08 17:22:55,021 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 01:06:28,573 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 01:06:28,573 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 01:09:02,815 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:09:02,815 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:09:05,237 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:09:05,237 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:18,757 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:18,757 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:19,378 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:19,378 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:23,447 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:23,447 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:23,467 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:23,467 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:26,613 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:26,613 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:26,762 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:26,762 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:29,220 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:29,220 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:29,276 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:29,276 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:31,839 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:31,839 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 01:11:31,854 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:11:31,854 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 01:47:49,132 autoreload trigger_reload /app/product/apps.py changed, reloading.
+INFO 2026-03-09 01:47:49,132 autoreload trigger_reload /app/product/apps.py changed, reloading.
+INFO 2026-03-09 01:48:08,308 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 01:48:08,308 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 12:03:32,610 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 12:03:32,610 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 21:51:30,890 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 21:51:30,890 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 21:51:56,668 views create Signup process started
+INFO 2026-03-09 21:51:59,938 views create User successfully signed up!!!
+INFO 2026-03-09 21:51:59,956 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 77
+INFO 2026-03-09 21:51:59,956 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 77
+WARNING 2026-03-09 21:53:27,294 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-09 21:53:27,294 log log_message Bad Request: /api/v1/auth/login/
+WARNING 2026-03-09 21:53:27,306 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+WARNING 2026-03-09 21:53:27,306 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 400 76
+INFO 2026-03-09 21:53:49,650 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-09 21:53:49,650 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-09 21:55:37,419 views create Signup process started
+WARNING 2026-03-09 21:55:37,650 views create User signup attempt not successful
+WARNING 2026-03-09 21:55:37,668 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 21:55:37,668 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 21:55:37,706 views create Signup process started
+INFO 2026-03-09 21:55:39,485 views create User successfully signed up!!!
+INFO 2026-03-09 21:57:14,209 views create Signup process started
+WARNING 2026-03-09 21:57:14,411 views create User signup attempt not successful
+WARNING 2026-03-09 21:57:14,426 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 21:57:14,426 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 21:57:14,475 views create Signup process started
+INFO 2026-03-09 21:57:18,071 views create User successfully signed up!!!
+WARNING 2026-03-09 22:00:53,022 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:00:53,022 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:00:55,220 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:00:55,220 log log_message Unauthorized: /api/v1/auth/login/
+INFO 2026-03-09 22:00:58,156 views create Signup process started
+WARNING 2026-03-09 22:00:58,643 views create User signup attempt not successful
+WARNING 2026-03-09 22:00:58,647 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:00:58,647 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:00:58,704 views create Signup process started
+INFO 2026-03-09 22:01:02,352 views create User successfully signed up!!!
+INFO 2026-03-09 22:01:47,563 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-09 22:01:47,563 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+WARNING 2026-03-09 22:02:44,262 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:02:44,262 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:02:46,068 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:02:46,068 log log_message Unauthorized: /api/v1/auth/login/
+INFO 2026-03-09 22:02:47,628 views create Signup process started
+WARNING 2026-03-09 22:02:47,751 views create User signup attempt not successful
+WARNING 2026-03-09 22:02:47,754 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:02:47,754 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:02:47,774 views create Signup process started
+INFO 2026-03-09 22:02:49,195 views create User successfully signed up!!!
+INFO 2026-03-09 22:13:52,587 views create Signup process started
+WARNING 2026-03-09 22:13:52,794 views create User signup attempt not successful
+WARNING 2026-03-09 22:13:52,800 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:13:52,800 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:13:52,825 views create Signup process started
+INFO 2026-03-09 22:13:54,924 views create User successfully signed up!!!
+INFO 2026-03-09 22:19:46,357 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:19:46,357 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:19:53,936 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:19:53,936 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:23:57,562 views create Signup process started
+WARNING 2026-03-09 22:23:57,698 views create User signup attempt not successful
+WARNING 2026-03-09 22:23:57,705 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:23:57,705 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:23:57,734 views create Signup process started
+INFO 2026-03-09 22:24:01,276 views create User successfully signed up!!!
+INFO 2026-03-09 22:24:37,704 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:24:37,704 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:24:43,218 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:24:43,218 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:25:18,040 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:25:18,040 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-09 22:25:20,978 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:25:20,978 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:25:38,549 views create Signup process started
+WARNING 2026-03-09 22:25:38,692 views create User signup attempt not successful
+WARNING 2026-03-09 22:25:38,696 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:25:38,696 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:25:38,716 views create Signup process started
+INFO 2026-03-09 22:25:40,900 views create User successfully signed up!!!
+WARNING 2026-03-09 22:26:27,992 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:26:27,992 log log_message Unauthorized: /api/v1/auth/login/
+INFO 2026-03-09 22:26:32,484 views create Signup process started
+WARNING 2026-03-09 22:26:32,598 views create User signup attempt not successful
+WARNING 2026-03-09 22:26:32,601 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:26:32,601 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:26:32,620 views create Signup process started
+INFO 2026-03-09 22:26:33,986 views create User successfully signed up!!!
+WARNING 2026-03-09 22:27:39,742 log log_message Unauthorized: /api/v1/auth/login/
+WARNING 2026-03-09 22:27:39,742 log log_message Unauthorized: /api/v1/auth/login/
+INFO 2026-03-09 22:27:43,958 views create Signup process started
+WARNING 2026-03-09 22:27:44,062 views create User signup attempt not successful
+WARNING 2026-03-09 22:27:44,064 log log_message Bad Request: /api/v1/auth/signup/
+WARNING 2026-03-09 22:27:44,064 log log_message Bad Request: /api/v1/auth/signup/
+INFO 2026-03-09 22:27:44,081 views create Signup process started
+INFO 2026-03-09 22:27:45,372 views create User successfully signed up!!!
+INFO 2026-03-09 22:30:44,881 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 22:30:44,881 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 22:31:02,709 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:31:02,709 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:33:16,787 autoreload trigger_reload /app/product/mixin.py changed, reloading.
+INFO 2026-03-09 22:33:16,787 autoreload trigger_reload /app/product/mixin.py changed, reloading.
+INFO 2026-03-09 22:33:28,686 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:33:28,686 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:33:38,236 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 22:33:38,236 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-09 22:33:41,039 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 22:33:41,039 log log_message "GET /api/v1/product/ HTTP/1.1" 200 680
+INFO 2026-03-09 22:35:19,381 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 22:35:19,381 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 22:35:25,049 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 22:35:25,049 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:15:38,775 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:15:38,775 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:16:09,714 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:16:09,714 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:16:52,103 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:16:52,103 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:17:09,226 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:17:09,226 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:17:59,124 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:17:59,124 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-09 23:18:55,184 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:18:55,184 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-09 23:21:36,076 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-09 23:21:36,076 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-09 23:21:36,809 log log_message "POST /api/v1/product/ HTTP/1.1" 401 58
+WARNING 2026-03-09 23:21:36,809 log log_message "POST /api/v1/product/ HTTP/1.1" 401 58
+INFO 2026-03-09 23:35:39,651 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:35:39,651 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:35:54,665 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:35:54,665 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:37:36,475 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-09 23:37:36,475 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+WARNING 2026-03-09 23:38:21,410 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-09 23:38:21,410 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-09 23:38:21,414 log log_message "POST /api/v1/product/ HTTP/1.1" 401 172
+WARNING 2026-03-09 23:38:21,414 log log_message "POST /api/v1/product/ HTTP/1.1" 401 172
+ERROR 2026-03-09 23:39:52,439 log log_message Internal Server Error: /api/v1/auth/login/refresh
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/auth/login/refresh/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-09 23:39:52,439 log log_message Internal Server Error: /api/v1/auth/login/refresh
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/auth/login/refresh/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-09 23:39:52,619 log log_message "POST /api/v1/auth/login/refresh HTTP/1.1" 500 64411
+ERROR 2026-03-09 23:39:52,619 log log_message "POST /api/v1/auth/login/refresh HTTP/1.1" 500 64411
+WARNING 2026-03-09 23:41:06,317 log log_message Unsupported Media Type: /api/v1/auth/login/refresh/
+WARNING 2026-03-09 23:41:06,317 log log_message Unsupported Media Type: /api/v1/auth/login/refresh/
+WARNING 2026-03-09 23:41:06,323 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 415 62
+WARNING 2026-03-09 23:41:06,323 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 415 62
+INFO 2026-03-09 23:41:16,791 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+INFO 2026-03-09 23:41:16,791 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+WARNING 2026-03-09 23:41:51,272 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-09 23:41:51,272 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-09 23:41:51,276 log log_message "POST /api/v1/product/ HTTP/1.1" 400 104
+WARNING 2026-03-09 23:41:51,276 log log_message "POST /api/v1/product/ HTTP/1.1" 400 104
+INFO 2026-03-09 23:44:18,529 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:44:18,529 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:44:36,290 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:44:36,290 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:44:49,630 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:44:49,630 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-09 23:44:52,743 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:44:52,743 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-09 23:46:01,487 log log_message Internal Server Error: /api/v1/product/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/app/product/serializers.py", line 28, in create
+    product = Product.objects.create(**validated_data)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/base.py", line 946, in save_base
+    pre_save.send(
+    ~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py", line 209, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/app/product/signal.py", line 9, in invalidate_cache
+    redis_connection.delete_pattern("product_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Redis' object has no attribute 'delete_pattern'
+ERROR 2026-03-09 23:46:01,487 log log_message Internal Server Error: /api/v1/product/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/app/product/serializers.py", line 28, in create
+    product = Product.objects.create(**validated_data)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/base.py", line 946, in save_base
+    pre_save.send(
+    ~~~~~~~~~~~~~^
+        sender=origin,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/dispatch/dispatcher.py", line 209, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/app/product/signal.py", line 9, in invalidate_cache
+    redis_connection.delete_pattern("product_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Redis' object has no attribute 'delete_pattern'
+ERROR 2026-03-09 23:46:01,565 log log_message "POST /api/v1/product/ HTTP/1.1" 500 131371
+ERROR 2026-03-09 23:46:01,565 log log_message "POST /api/v1/product/ HTTP/1.1" 500 131371
+INFO 2026-03-09 23:53:33,246 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:53:33,246 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:53:48,736 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:53:48,736 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:53:52,671 log log_message "POST /api/v1/product/ HTTP/1.1" 201 354
+INFO 2026-03-09 23:53:52,671 log log_message "POST /api/v1/product/ HTTP/1.1" 201 354
+INFO 2026-03-09 23:56:39,167 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:56:39,167 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:56:46,816 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:56:46,816 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:56:52,377 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:56:52,377 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:56:54,640 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:56:54,640 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:58:00,263 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:58:00,263 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-09 23:58:05,968 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-09 23:58:05,968 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-09 23:58:39,258 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-09 23:58:39,258 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-09 23:58:39,273 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+WARNING 2026-03-09 23:58:39,273 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+INFO 2026-03-10 00:03:59,795 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:03:59,795 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:04:13,226 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:04:13,226 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:07:12,768 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:07:12,768 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:07:19,530 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:07:19,530 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:07:46,300 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:07:46,300 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:07:49,225 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:07:49,225 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:08:02,201 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:08:02,201 autoreload trigger_reload /app/product/signal.py changed, reloading.
+INFO 2026-03-10 00:08:07,731 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:08:07,731 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-10 00:08:21,821 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-10 00:08:21,821 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-10 00:08:21,829 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+WARNING 2026-03-10 00:08:21,829 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+INFO 2026-03-10 00:10:00,046 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:10:00,046 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:10:10,637 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:10:10,637 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:11:45,716 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:11:45,716 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:11:51,687 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:11:51,687 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:13:16,275 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:13:16,275 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:13:20,520 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:13:20,520 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-10 00:13:26,958 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-10 00:13:26,958 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-10 00:13:26,992 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+WARNING 2026-03-10 00:13:26,992 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+INFO 2026-03-10 00:14:28,852 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:14:28,852 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:14:28,938 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:14:28,938 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:14:53,772 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:14:53,772 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:14:53,793 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:14:53,793 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:15:20,489 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:15:20,489 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:15:20,500 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:15:20,500 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:18:11,763 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:18:11,763 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 00:18:18,363 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:18:18,363 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:18:55,276 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:18:55,276 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:18:55,304 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:18:55,304 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:23:56,871 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:23:56,871 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:23:57,147 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:23:57,147 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:24:57,787 autoreload trigger_reload /app/product/mixin.py changed, reloading.
+INFO 2026-03-10 00:24:57,787 autoreload trigger_reload /app/product/mixin.py changed, reloading.
+INFO 2026-03-10 00:25:04,295 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:25:04,295 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:25:25,009 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:25:25,009 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:25:25,033 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:25:25,033 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:25:57,863 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:25:57,863 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:25:57,877 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:25:57,877 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:26:39,990 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:26:39,990 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:26:40,001 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:26:40,001 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:31:45,637 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:31:45,637 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 00:31:54,172 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:31:54,172 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:31:54,203 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:31:54,203 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:32:54,702 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:32:54,702 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:32:54,813 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:32:54,813 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:34:18,649 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:34:18,649 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 00:34:18,684 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 00:34:18,684 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 01:29:37,896 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 01:29:37,896 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-10 01:29:41,233 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 01:29:41,233 log log_message "GET /api/v1/product/ HTTP/1.1" 200 1035
+INFO 2026-03-10 01:31:33,146 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-10 01:31:33,146 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-10 01:31:44,736 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 01:31:44,736 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 01:32:27,365 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-10 01:32:27,365 autoreload trigger_reload /app/authentication/views.py changed, reloading.
+INFO 2026-03-10 01:32:35,810 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 01:32:35,810 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 01:58:02,762 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 01:58:02,762 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 01:58:25,431 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 01:58:25,431 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 02:01:20,772 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-10 02:01:20,772 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-10 02:01:47,188 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 02:01:47,188 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 02:02:11,513 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-10 02:02:11,513 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-10 02:02:19,076 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 02:02:19,076 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 02:03:27,683 log log_message Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/sentry_sdk/integrations/django/views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/app/buyam/urls.py", line 22, in trigger_error
+    divide_by_zero = 1/0
+                     ~^~
+ZeroDivisionError: division by zero
+ERROR 2026-03-10 02:03:27,683 log log_message Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/sentry_sdk/integrations/django/views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/app/buyam/urls.py", line 22, in trigger_error
+    divide_by_zero = 1/0
+                     ~^~
+ZeroDivisionError: division by zero
+ERROR 2026-03-10 02:03:28,050 log log_message "GET /sentry-debug/ HTTP/1.1" 500 66810
+ERROR 2026-03-10 02:03:28,050 log log_message "GET /sentry-debug/ HTTP/1.1" 500 66810
+WARNING 2026-03-10 02:03:36,473 log log_message Not Found: /favicon.ico
+WARNING 2026-03-10 02:03:36,473 log log_message Not Found: /favicon.ico
+WARNING 2026-03-10 02:03:36,501 log log_message "GET /favicon.ico HTTP/1.1" 404 3175
+WARNING 2026-03-10 02:03:36,501 log log_message "GET /favicon.ico HTTP/1.1" 404 3175
+ERROR 2026-03-10 02:26:03,028 log log_message Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/sentry_sdk/integrations/django/views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/app/buyam/urls.py", line 22, in trigger_error
+    divide_by_zero = 1/0
+                     ~^~
+ZeroDivisionError: division by zero
+ERROR 2026-03-10 02:26:03,028 log log_message Internal Server Error: /sentry-debug/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/sentry_sdk/integrations/django/views.py", line 87, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/app/buyam/urls.py", line 22, in trigger_error
+    divide_by_zero = 1/0
+                     ~^~
+ZeroDivisionError: division by zero
+ERROR 2026-03-10 02:26:03,259 log log_message "GET /sentry-debug/ HTTP/1.1" 500 66661
+ERROR 2026-03-10 02:26:03,259 log log_message "GET /sentry-debug/ HTTP/1.1" 500 66661
+INFO 2026-03-10 03:05:02,404 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 03:05:02,404 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 03:05:31,716 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:05:31,716 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:08:02,054 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:02,054 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:03,004 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:08:03,004 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:08:11,612 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:11,612 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:11,728 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:08:11,728 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:08:16,056 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:16,056 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50 HTTP/1.1" 301 0
+INFO 2026-03-10 03:08:16,162 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:08:16,162 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 03:15:38,466 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:15:38,466 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:16:00,141 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:16:00,141 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:16:13,676 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:16:13,676 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:16:20,121 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:16:20,121 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:27:25,095 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:27:25,095 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:27:51,553 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:27:51,553 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:28:07,002 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:28:07,002 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:28:13,965 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:28:13,965 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:29:33,810 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 03:29:33,810 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 03:29:42,161 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:29:42,161 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:35:01,235 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:35:01,235 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:35:15,783 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:35:15,783 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:35:53,617 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:35:53,617 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:36:04,678 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:36:04,678 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:37:13,192 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:37:13,192 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:37:18,203 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:37:18,203 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:37:38,099 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:37:38,099 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:37:44,803 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:37:44,803 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:39:02,065 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:39:02,065 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:39:09,040 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:39:09,040 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:40:01,535 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:40:01,535 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 03:40:08,714 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:40:08,714 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:42:08,703 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:42:08,703 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 03:42:13,428 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:42:13,428 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:52:14,780 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:52:14,780 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:55:56,903 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:55:56,903 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:56:05,059 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:56:05,059 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:56:11,019 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:56:11,019 autoreload trigger_reload /app/product/models.py changed, reloading.
+INFO 2026-03-10 03:56:15,218 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 03:56:15,218 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:02:48,310 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:02:48,310 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:02:53,682 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:02:53,682 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:04:29,319 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:04:29,319 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:04:39,793 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:04:39,793 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:05:01,151 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:05:01,151 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 04:05:05,017 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 04:05:05,017 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:01:40,259 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 05:01:40,259 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-10 05:01:52,585 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:01:52,585 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:02:18,078 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 05:02:18,078 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 05:02:22,977 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:02:22,977 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:02:35,505 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 05:02:35,505 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 05:02:46,250 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:02:46,250 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:04:43,641 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 05:04:43,641 autoreload trigger_reload /app/buyam/settings.py changed, reloading.
+INFO 2026-03-10 05:04:57,290 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:04:57,290 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:48:04,499 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:48:04,499 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-10 05:48:48,584 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/
+WARNING 2026-03-10 05:48:48,584 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/
+WARNING 2026-03-10 05:48:48,649 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 401 172
+WARNING 2026-03-10 05:48:48,649 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 401 172
+INFO 2026-03-10 05:49:04,797 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+INFO 2026-03-10 05:49:04,797 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+INFO 2026-03-10 05:49:24,527 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+INFO 2026-03-10 05:49:24,527 log log_message "GET /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/ HTTP/1.1" 200 354
+ERROR 2026-03-10 05:49:41,250 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:49:41,250 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:49:41,601 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+ERROR 2026-03-10 05:49:41,601 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+ERROR 2026-03-10 05:50:07,266 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:50:07,266 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:50:07,276 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+ERROR 2026-03-10 05:50:07,276 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+INFO 2026-03-10 05:50:41,736 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:50:41,736 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 05:51:29,511 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:51:29,511 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2026-03-10 05:51:29,530 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+ERROR 2026-03-10 05:51:29,530 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart HTTP/1.1" 500 65331
+ERROR 2026-03-10 05:51:47,361 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: ProductViewSet.add_product_to_cart() got an unexpected keyword argument 'pk'
+ERROR 2026-03-10 05:51:47,361 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: ProductViewSet.add_product_to_cart() got an unexpected keyword argument 'pk'
+ERROR 2026-03-10 05:51:47,375 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 84940
+ERROR 2026-03-10 05:51:47,375 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 84940
+INFO 2026-03-10 05:52:30,759 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:52:30,759 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:52:43,598 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:52:43,598 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:53:07,325 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:53:07,325 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:53:15,084 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:53:15,084 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:53:27,394 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:53:27,394 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:53:38,611 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:53:38,611 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 05:54:15,170 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2026-03-10 05:54:15,170 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2026-03-10 05:54:15,417 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 75900
+ERROR 2026-03-10 05:54:15,417 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 75900
+INFO 2026-03-10 05:55:39,417 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:55:39,417 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:56:10,754 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:56:10,754 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 05:56:26,208 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 29, in add_product_to_cart
+    return Response({
+           ^^^^^^^^
+NameError: name 'Response' is not defined
+ERROR 2026-03-10 05:56:26,208 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 29, in add_product_to_cart
+    return Response({
+           ^^^^^^^^
+NameError: name 'Response' is not defined
+ERROR 2026-03-10 05:56:26,240 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 88156
+ERROR 2026-03-10 05:56:26,240 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 88156
+INFO 2026-03-10 05:57:10,230 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:57:10,230 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 05:57:26,967 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:57:26,967 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 05:57:44,345 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 05:57:44,345 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:01:50,546 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:01:50,546 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:02:05,343 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:02:05,343 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 06:02:15,810 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/json/encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Product is not JSON serializable
+ERROR 2026-03-10 06:02:15,810 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+        data, cls=self.encoder_class,
+        indent=indent, ensure_ascii=self.ensure_ascii,
+        allow_nan=not self.strict, separators=separators
+    )
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/json/encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Product is not JSON serializable
+ERROR 2026-03-10 06:02:15,989 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 97752
+ERROR 2026-03-10 06:02:15,989 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 97752
+INFO 2026-03-10 06:02:56,696 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:02:56,696 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:03:03,330 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:03:03,330 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:03:08,608 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:03:08,608 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:05:37,684 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:05:37,684 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:06:24,262 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:06:24,262 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:06:51,159 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:06:51,159 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 47
+INFO 2026-03-10 06:08:09,107 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:08:09,107 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:08:30,542 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:08:30,542 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:09:06,022 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 91
+INFO 2026-03-10 06:09:06,022 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 200 91
+INFO 2026-03-10 06:12:26,891 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:12:26,891 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:12:37,890 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:12:37,890 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:13:01,049 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:13:01,049 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:13:03,725 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:13:03,725 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 06:16:47,630 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+ERROR 2026-03-10 06:16:47,630 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+ERROR 2026-03-10 06:16:48,239 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156371
+ERROR 2026-03-10 06:16:48,239 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156371
+INFO 2026-03-10 06:19:30,668 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:19:30,668 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-10 06:19:46,205 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:19:46,205 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-10 06:20:12,817 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+ERROR 2026-03-10 06:20:12,817 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cart.user_id does not exist
+LINE 1: SELECT "cart_cart"."id", "cart_cart"."user_id" FROM "cart_ca...
+                                 ^
+
+ERROR 2026-03-10 06:20:13,629 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156554
+ERROR 2026-03-10 06:20:13,629 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156554
+INFO 2026-03-10 06:26:56,191 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 06:26:56,191 autoreload trigger_reload /app/cart/models.py changed, reloading.
+INFO 2026-03-10 06:27:15,131 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-10 06:27:15,131 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 20:56:55,466 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 20:56:55,466 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-11 20:58:43,509 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+WARNING 2026-03-11 20:58:43,509 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+WARNING 2026-03-11 20:58:43,554 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 401 172
+WARNING 2026-03-11 20:58:43,554 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 401 172
+WARNING 2026-03-11 20:59:34,010 log log_message Unauthorized: /api/v1/auth/login/refresh/
+WARNING 2026-03-11 20:59:34,010 log log_message Unauthorized: /api/v1/auth/login/refresh/
+WARNING 2026-03-11 20:59:34,021 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 401 54
+WARNING 2026-03-11 20:59:34,021 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 401 54
+WARNING 2026-03-11 21:00:17,163 log log_message Unauthorized: /api/v1/auth/login/refresh/
+WARNING 2026-03-11 21:00:17,163 log log_message Unauthorized: /api/v1/auth/login/refresh/
+WARNING 2026-03-11 21:00:17,173 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 401 54
+WARNING 2026-03-11 21:00:17,173 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 401 54
+INFO 2026-03-11 21:00:47,597 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-11 21:00:47,597 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+ERROR 2026-03-11 21:01:54,914 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+ERROR 2026-03-11 21:01:54,914 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+ERROR 2026-03-11 21:01:55,156 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156392
+ERROR 2026-03-11 21:01:55,156 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156392
+ERROR 2026-03-11 21:25:26,468 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+ERROR 2026-03-11 21:25:26,468 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 31, in add_product_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user.id, defaults={'user': request.user})
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Cart.user_id does not exist
+LINE 1: SELECT "Cart"."id", "Cart"."user_id" FROM "Cart" WHERE "Cart...
+                            ^
+
+ERROR 2026-03-11 21:25:26,612 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156392
+ERROR 2026-03-11 21:25:26,612 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 156392
+INFO 2026-03-11 21:37:32,768 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 21:37:32,768 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-11 21:58:50,760 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "authentication_customusermodel" does not exist
+LINE 1: ...d", "authentication_customusermodel"."email" FROM "authentic...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 330, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "authentication_customusermodel" does not exist
+LINE 1: ...d", "authentication_customusermodel"."email" FROM "authentic...
+                                                             ^
+
+ERROR 2026-03-11 21:58:50,760 log log_message Internal Server Error: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "authentication_customusermodel" does not exist
+LINE 1: ...d", "authentication_customusermodel"."email" FROM "authentic...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 330, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 635, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "authentication_customusermodel" does not exist
+LINE 1: ...d", "authentication_customusermodel"."email" FROM "authentic...
+                                                             ^
+
+ERROR 2026-03-11 21:58:51,031 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 179333
+ERROR 2026-03-11 21:58:51,031 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 500 179333
+INFO 2026-03-11 22:01:33,500 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:01:33,500 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:01:53,941 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:01:53,941 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-11 22:02:52,892 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+WARNING 2026-03-11 22:02:52,892 log log_message Unauthorized: /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/
+WARNING 2026-03-11 22:02:52,906 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 401 172
+WARNING 2026-03-11 22:02:52,906 log log_message "POST /api/v1/product/652ee3ca-a68b-4be5-9fad-c5cd83d07d50/add_product_to_cart/ HTTP/1.1" 401 172
+ERROR 2026-03-11 22:03:58,700 log log_message Internal Server Error: /api/v1/auth/login/refresh/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        **{api_settings.USER_ID_FIELD: user_id}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+authentication.models.CustomUserModel.DoesNotExist: CustomUserModel matching query does not exist.
+ERROR 2026-03-11 22:03:58,700 log log_message Internal Server Error: /api/v1/auth/login/refresh/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework_simplejwt/serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        **{api_settings.USER_ID_FIELD: user_id}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+authentication.models.CustomUserModel.DoesNotExist: CustomUserModel matching query does not exist.
+ERROR 2026-03-11 22:03:58,761 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 500 111749
+ERROR 2026-03-11 22:03:58,761 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 500 111749
+INFO 2026-03-11 22:06:06,623 log log_message "GET /admin HTTP/1.1" 301 0
+INFO 2026-03-11 22:06:06,623 log log_message "GET /admin HTTP/1.1" 301 0
+INFO 2026-03-11 22:06:07,316 log log_message "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-11 22:06:07,316 log log_message "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-11 22:06:09,035 log log_message "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-11 22:06:09,035 log log_message "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-11 22:06:10,612 log log_message "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-03-11 22:06:10,629 log log_message "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-03-11 22:06:10,635 log log_message "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-03-11 22:06:10,636 log log_message "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-03-11 22:06:10,659 log log_message "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-03-11 22:06:10,612 log log_message "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-03-11 22:06:10,629 log log_message "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-03-11 22:06:10,734 log log_message "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-03-11 22:06:10,635 log log_message "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-03-11 22:06:10,636 log log_message "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-03-11 22:06:10,659 log log_message "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-03-11 22:06:10,734 log log_message "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-03-11 22:06:11,248 log log_message "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-03-11 22:06:11,248 log log_message "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-03-11 22:06:17,351 log log_message Not Found: /favicon.ico
+WARNING 2026-03-11 22:06:17,351 log log_message Not Found: /favicon.ico
+WARNING 2026-03-11 22:06:17,364 log log_message "GET /favicon.ico HTTP/1.1" 404 3175
+WARNING 2026-03-11 22:06:17,364 log log_message "GET /favicon.ico HTTP/1.1" 404 3175
+INFO 2026-03-11 22:06:50,322 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:06:50,322 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:08:11,342 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:08:11,342 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:08:22,188 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:08:22,188 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4283
+INFO 2026-03-11 22:17:24,482 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-03-11 22:17:24,482 log log_message "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-03-11 22:17:24,980 log log_message "GET /admin/ HTTP/1.1" 200 8366
+INFO 2026-03-11 22:17:24,980 log log_message "GET /admin/ HTTP/1.1" 200 8366
+INFO 2026-03-11 22:17:25,330 log log_message "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,330 log log_message "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,409 log log_message "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,412 log log_message "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-03-11 22:17:25,409 log log_message "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,412 log log_message "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-03-11 22:17:25,493 log log_message "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,495 log log_message "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,493 log log_message "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,527 log log_message "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,495 log log_message "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,527 log log_message "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,558 log log_message "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,558 log log_message "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-11 22:17:25,631 log log_message "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-03-11 22:17:25,631 log log_message "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-03-11 22:17:25,783 log log_message "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-03-11 22:17:25,783 log log_message "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-03-11 22:18:04,263 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:18:04,263 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:18:27,200 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:18:27,200 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:19:00,714 log log_message "GET /admin/ HTTP/1.1" 200 8353
+INFO 2026-03-11 22:19:00,714 log log_message "GET /admin/ HTTP/1.1" 200 8353
+INFO 2026-03-11 22:19:08,816 log log_message "GET /admin/authentication/customusermodel/ HTTP/1.1" 200 10857
+INFO 2026-03-11 22:19:08,816 log log_message "GET /admin/authentication/customusermodel/ HTTP/1.1" 200 10857
+INFO 2026-03-11 22:19:09,428 log log_message "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-03-11 22:19:09,428 log log_message "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-03-11 22:19:09,493 log log_message "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-03-11 22:19:09,493 log log_message "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-03-11 22:19:09,569 log log_message "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-03-11 22:19:09,569 log log_message "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-03-11 22:19:09,595 log log_message "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-03-11 22:19:09,595 log log_message "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-03-11 22:19:09,602 log log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-11 22:19:09,602 log log_message "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-11 22:19:09,672 log log_message "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-03-11 22:19:09,674 log log_message "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-03-11 22:19:09,674 log log_message "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-03-11 22:19:09,680 log log_message "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-03-11 22:19:09,680 log log_message "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-03-11 22:19:09,672 log log_message "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-03-11 22:19:09,715 log log_message "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-03-11 22:19:09,715 log log_message "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-03-11 22:19:09,808 log log_message "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-03-11 22:19:09,808 log log_message "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-03-11 22:19:10,184 log log_message "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-03-11 22:19:10,185 log log_message "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-03-11 22:19:10,184 log log_message "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-03-11 22:19:10,185 log log_message "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-03-11 22:19:12,490 log log_message "GET /admin/ HTTP/1.1" 200 8353
+INFO 2026-03-11 22:19:12,490 log log_message "GET /admin/ HTTP/1.1" 200 8353
+INFO 2026-03-11 22:19:58,962 views create Signup process started
+INFO 2026-03-11 22:20:07,061 views create User successfully signed up!!!
+INFO 2026-03-11 22:20:07,516 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 77
+INFO 2026-03-11 22:20:07,516 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 77
+INFO 2026-03-11 22:22:14,354 views create Signup process started
+INFO 2026-03-11 22:22:18,323 views create User successfully signed up!!!
+INFO 2026-03-11 22:22:18,369 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 83
+INFO 2026-03-11 22:22:18,369 log log_message "POST /api/v1/auth/signup/ HTTP/1.1" 201 83
+INFO 2026-03-11 22:23:45,364 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-11 22:23:45,364 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-11 22:25:59,266 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-11 22:25:59,266 log log_message "POST /api/v1/auth/login/ HTTP/1.1" 200 489
+WARNING 2026-03-11 22:27:25,281 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-11 22:27:25,281 log log_message Bad Request: /api/v1/product/
+WARNING 2026-03-11 22:27:25,289 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+WARNING 2026-03-11 22:27:25,289 log log_message "POST /api/v1/product/ HTTP/1.1" 400 58
+INFO 2026-03-11 22:28:56,257 log log_message "POST /api/v1/product/ HTTP/1.1" 201 354
+INFO 2026-03-11 22:28:56,257 log log_message "POST /api/v1/product/ HTTP/1.1" 201 354
+INFO 2026-03-11 22:29:26,925 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-11 22:29:26,925 log log_message "GET /api/v1/product HTTP/1.1" 301 0
+INFO 2026-03-11 22:29:27,083 log log_message "GET /api/v1/product/ HTTP/1.1" 200 356
+INFO 2026-03-11 22:29:27,083 log log_message "GET /api/v1/product/ HTTP/1.1" 200 356
+INFO 2026-03-11 22:30:21,784 log log_message "GET /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9 HTTP/1.1" 301 0
+INFO 2026-03-11 22:30:21,784 log log_message "GET /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9 HTTP/1.1" 301 0
+INFO 2026-03-11 22:30:21,978 log log_message "GET /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/ HTTP/1.1" 200 354
+INFO 2026-03-11 22:30:21,978 log log_message "GET /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/ HTTP/1.1" 200 354
+WARNING 2026-03-11 22:39:40,155 log log_message Unauthorized: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+WARNING 2026-03-11 22:39:40,155 log log_message Unauthorized: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+WARNING 2026-03-11 22:39:40,277 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 401 172
+WARNING 2026-03-11 22:39:40,277 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 401 172
+INFO 2026-03-11 22:40:40,519 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 200 91
+INFO 2026-03-11 22:40:40,519 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 200 91
+INFO 2026-03-11 22:42:07,127 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:42:07,127 autoreload trigger_reload /app/authentication/models.py changed, reloading.
+INFO 2026-03-11 22:42:34,364 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:42:34,364 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:49:41,920 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:49:41,920 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:49:56,844 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:49:56,844 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:50:33,574 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:50:33,574 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:50:42,968 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:50:42,968 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:51:04,435 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:51:04,435 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:51:18,614 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:51:18,614 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:53:04,877 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:53:04,877 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:53:24,253 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:53:24,253 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:53:43,496 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:53:43,496 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:53:49,948 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:53:49,948 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:54:41,368 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:54:41,368 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:54:45,037 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:54:45,037 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:55:12,491 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:55:12,491 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:55:31,842 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:55:31,842 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-11 22:55:47,503 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 39, in add_product_to_cart
+    cartitem = CartItem.objects.get_or_create(product=product, default={
+        "cart": cart,
+        "quantity": quantity
+    })
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 625, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1676, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1708, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1556, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1363, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1842, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'default' into field. Choices are: cart, cart_id, created_on, id, item_expiration, product, product_id, quantity
+ERROR 2026-03-11 22:55:47,503 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 39, in add_product_to_cart
+    cartitem = CartItem.objects.get_or_create(product=product, default={
+        "cart": cart,
+        "quantity": quantity
+    })
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 625, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1676, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1708, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1556, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1363, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 1842, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'default' into field. Choices are: cart, cart_id, created_on, id, item_expiration, product, product_id, quantity
+ERROR 2026-03-11 22:55:47,578 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 146034
+ERROR 2026-03-11 22:55:47,578 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 146034
+INFO 2026-03-11 22:56:28,407 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:56:28,407 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 22:56:45,509 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 22:56:45,509 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-11 22:56:58,260 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+cart.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 39, in add_product_to_cart
+    cartitem = CartItem.objects.get_or_create(product=product, defaults={
+        "cart": cart,
+        "quantity": quantity
+    })
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CartItem.save() got an unexpected keyword argument 'force_insert'
+ERROR 2026-03-11 22:56:58,260 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+cart.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 39, in add_product_to_cart
+    cartitem = CartItem.objects.get_or_create(product=product, defaults={
+        "cart": cart,
+        "quantity": quantity
+    })
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CartItem.save() got an unexpected keyword argument 'force_insert'
+ERROR 2026-03-11 22:56:58,406 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 113326
+ERROR 2026-03-11 22:56:58,406 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 113326
+INFO 2026-03-11 23:00:50,826 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:00:50,826 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:01:15,812 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:01:15,812 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:02:41,254 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:02:41,254 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:02:47,329 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:02:47,329 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:05:58,062 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:05:58,062 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:06:13,338 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:06:13,338 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:06:30,324 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:06:30,324 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:06:35,121 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:06:35,121 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:09:39,717 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:09:39,717 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-11 23:10:20,355 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-11 23:10:20,355 autoreload run_with_reloader Watching for file changes with StatReloader
+ERROR 2026-03-11 23:10:38,245 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 29, in add_product_to_cart
+    quantity = int(request.data.get("quantity"))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR 2026-03-11 23:10:38,245 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 29, in add_product_to_cart
+    quantity = int(request.data.get("quantity"))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR 2026-03-11 23:10:38,455 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 89966
+ERROR 2026-03-11 23:10:38,455 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 89966
+ERROR 2026-03-11 23:11:35,290 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+cart.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 35, in add_product_to_cart
+    cartitem, _ = CartItem.objects.get_or_create(product=product, cart=cart, defaults={
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "quantity": quantity
+        ^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CartItem.save() got an unexpected keyword argument 'force_insert'
+ERROR 2026-03-11 23:11:35,290 log log_message Internal Server Error: /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+cart.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/product/views.py", line 35, in add_product_to_cart
+    cartitem, _ = CartItem.objects.get_or_create(product=product, cart=cart, defaults={
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "quantity": quantity
+        ^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CartItem.save() got an unexpected keyword argument 'force_insert'
+ERROR 2026-03-11 23:11:35,364 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 113472
+ERROR 2026-03-11 23:11:35,364 log log_message "POST /api/v1/product/c6984dea-5b5a-4b20-9b19-e3ad1d02cbb9/add_product_to_cart/ HTTP/1.1" 500 113472
+INFO 2026-03-12 01:22:18,789 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-12 01:22:18,789 autoreload trigger_reload /app/product/views.py changed, reloading.
+INFO 2026-03-12 01:23:16,103 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:23:16,103 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:27:50,255 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-12 01:27:50,255 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-12 01:28:52,095 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:28:52,095 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:30:29,254 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-12 01:30:29,254 autoreload trigger_reload /app/buyam/urls.py changed, reloading.
+INFO 2026-03-12 01:30:59,708 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:30:59,708 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:34:52,147 autoreload trigger_reload /app/cart/urls.py changed, reloading.
+INFO 2026-03-12 01:34:52,147 autoreload trigger_reload /app/cart/urls.py changed, reloading.
+INFO 2026-03-12 01:35:22,900 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-12 01:35:22,900 autoreload run_with_reloader Watching for file changes with StatReloader
+WARNING 2026-03-12 01:35:42,179 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-12 01:35:42,179 log log_message Unauthorized: /api/v1/product/
+WARNING 2026-03-12 01:35:42,188 log log_message "POST /api/v1/product/ HTTP/1.1" 401 172
+WARNING 2026-03-12 01:35:42,188 log log_message "POST /api/v1/product/ HTTP/1.1" 401 172
+INFO 2026-03-12 01:37:40,769 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+INFO 2026-03-12 01:37:40,769 log log_message "POST /api/v1/auth/login/refresh/ HTTP/1.1" 200 244
+INFO 2026-03-12 01:38:34,893 log log_message "POST /api/v1/product/ HTTP/1.1" 201 375
+INFO 2026-03-12 01:38:34,893 log log_message "POST /api/v1/product/ HTTP/1.1" 201 375

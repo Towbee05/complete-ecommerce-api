@@ -9,10 +9,15 @@ class CustomUserModel(AbstractUser):
     username = None
     email = models.EmailField(verbose_name=_("Email address"), unique=True)
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
-    object = CustomUserManager()
+    objects = CustomUserManager()
 
     def __str__(self):
         return self.email
+
+    class Meta:
+        db_table = "users"
+        verbose_name = "users"
+        verbose_name_plural = "users"

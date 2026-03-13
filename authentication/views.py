@@ -1,6 +1,6 @@
-# TODO: 1. Add test for signup view to ensure it works as expected and handles edge cases properly
-# TODO: 2. Add rate limiting API for signup view to prevent abuse
-# TODO: 3. Add email verification to make sure new users are legitimate
+# TODO: 1. Add test for signup view to ensure it works as expected and handles edge cases properly ✅
+# TODO: 2. Add rate limiting API for signup view to prevent abuse ✅
+# TODO: 3. Add email verification to make sure new users are legitimate 
 # TODO: 4. Ad4. Add google Sign-in
 # TODO: 5. Ad4. Add github Sign-in
 
@@ -9,6 +9,7 @@
 1. Added an authentication endpoint
 2. Addded a product catalog
 3. Seeded categories into the database
+4. Added cache to store products info for one hr.
 '''
 
 from django.shortcuts import render
