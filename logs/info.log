@@ -88167,3 +88167,7 @@ INFO 2026-03-18 22:53:07,300 autoreload trigger_reload /app/checkout/views.py ch
 INFO 2026-03-18 22:53:07,300 autoreload trigger_reload /app/checkout/views.py changed, reloading.
 INFO 2026-03-18 22:53:25,138 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-18 22:53:25,138 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-18 22:58:48,078 autoreload trigger_reload /app/checkout/views.py changed, reloading.
+INFO 2026-03-18 22:58:48,078 autoreload trigger_reload /app/checkout/views.py changed, reloading.
+INFO 2026-03-18 22:59:41,329 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-18 22:59:41,329 autoreload run_with_reloader Watching for file changes with StatReloader
