@@ -1,6 +1,12 @@
-from django.urls import path
-from .views import RandomAPIClass
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import CartItemViewSet, CartView
+
+routers = DefaultRouter()
+# routers.register(r'cart', CartView)
+routers.register(r'cartitem', CartItemViewSet, basename="cartitems")
 
 urlpatterns = [
-    path('cart', RandomAPIClass)
+    path("", CartView.as_view(), name="cart"),
+    path("", include(routers.urls))
 ]

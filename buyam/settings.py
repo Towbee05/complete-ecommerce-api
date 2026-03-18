@@ -47,8 +47,10 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'authentication',
     'product',
-    'cart'
+    'cart',
+    'checkout'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

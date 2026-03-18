@@ -27,7 +27,7 @@ urlpatterns = [
     path('api/v1/auth/', include("authentication.urls")),
     path('api/v1/product/', include("product.urls")),
     path('api/v1/carts/', include("cart.urls")),
-
+    path('api/v1/checkout/', include("checkout.urls")),
     # OpenAPI paths
     path('api/v1/schema', SpectacularAPIView.as_view(), name="schema"),
     path('api/v1/docs', SpectacularSwaggerView.as_view(), name="docs"),

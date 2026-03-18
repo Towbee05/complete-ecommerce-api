@@ -9,3 +9,4 @@ locust
 django-redis
 djangorestframework_simplejwt
 sentry-sdk
+stripe
