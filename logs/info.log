@@ -88171,3 +88171,1322 @@ INFO 2026-03-18 22:58:48,078 autoreload trigger_reload /app/checkout/views.py ch
 INFO 2026-03-18 22:58:48,078 autoreload trigger_reload /app/checkout/views.py changed, reloading.
 INFO 2026-03-18 22:59:41,329 autoreload run_with_reloader Watching for file changes with StatReloader
 INFO 2026-03-18 22:59:41,329 autoreload run_with_reloader Watching for file changes with StatReloader
+INFO 2026-03-18 23:28:57,069 log log_message "POST /api/v1/checkout/ HTTP/1.1" 200 46
+INFO 2026-03-18 23:28:57,069 log log_message "POST /api/v1/checkout/ HTTP/1.1" 200 46
+INFO 2026-03-18 23:29:04,273 _util log_info message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi
+INFO 2026-03-18 23:29:08,717 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -5] No address associated with hostname)")))'
+INFO 2026-03-18 23:29:08,729 _util log_info message='Initiating retry 1 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.50 seconds.'
+INFO 2026-03-18 23:29:13,243 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -5] No address associated with hostname)")))'
+INFO 2026-03-18 23:29:13,244 _util log_info message='Initiating retry 2 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.84 seconds.'
+ERROR 2026-03-18 23:29:20,014 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:29:20,014 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:29:20,510 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258644
+ERROR 2026-03-18 23:29:20,510 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258644
+INFO 2026-03-18 23:30:14,071 _util log_info message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi
+INFO 2026-03-18 23:30:51,482 _util log_info message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi response_code=404
+INFO 2026-03-18 23:30:51,516 _util log_info error_code=resource_missing error_message="No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'" error_param=id error_type=invalid_request_error message='Stripe v1 API error received'
+ERROR 2026-03-18 23:30:52,256 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 211, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 897, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 352, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_J6uZzVWKr2YBIZ: No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'
+ERROR 2026-03-18 23:30:52,256 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 211, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 897, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 352, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_J6uZzVWKr2YBIZ: No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'
+ERROR 2026-03-18 23:30:52,332 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 128542
+ERROR 2026-03-18 23:30:52,332 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 128542
+INFO 2026-03-18 23:31:23,514 _util log_info message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi
+INFO 2026-03-18 23:31:27,558 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -5] No address associated with hostname)")))'
+INFO 2026-03-18 23:31:27,561 _util log_info message='Initiating retry 1 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.50 seconds.'
+INFO 2026-03-18 23:31:32,070 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -5] No address associated with hostname)")))'
+INFO 2026-03-18 23:31:32,087 _util log_info message='Initiating retry 2 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.97 seconds.'
+ERROR 2026-03-18 23:31:38,293 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:31:38,293 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:31:38,857 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258644
+ERROR 2026-03-18 23:31:38,857 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258644
+INFO 2026-03-18 23:33:36,495 _util log_info message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi
+INFO 2026-03-18 23:33:44,836 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -3] Temporary failure in name resolution)")))'
+INFO 2026-03-18 23:33:44,852 _util log_info message='Initiating retry 1 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.50 seconds.'
+INFO 2026-03-18 23:33:53,412 _util log_info message='Encountered a retryable error Unexpected error communicating with Stripe.  If this problem persists,\nlet us know at support@stripe.com.\n\n(Network error: ConnectionError: HTTPSConnectionPool(host=\'api.stripe.com\', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host=\'api.stripe.com\', port=443): Failed to resolve \'api.stripe.com\' ([Errno -3] Temporary failure in name resolution)")))'
+INFO 2026-03-18 23:33:53,414 _util log_info message='Initiating retry 2 for request get https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi after sleeping 0.93 seconds.'
+ERROR 2026-03-18 23:33:59,329 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:33:59,329 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/local/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 676, in _request_internal
+    result = cast(
+        "RequestsSession", self._thread_local.session
+    ).request(
+        method,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 201, in request
+    rbody, rcode, rheaders = requestor.request_raw(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        method.lower(),
+        ^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 763, in request_raw
+    ) = self._get_http_client().request_with_retries(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        _usage=usage,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 295, in request_with_retries
+    return self._request_with_retries_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<5 lines>...
+        _usage=_usage,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 382, in _request_with_retries_internal
+    raise connection_error
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 349, in _request_with_retries_internal
+    response = self.request(method, url, headers, post_data)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 614, in request
+    return self._request_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, headers, post_data, is_streaming=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 708, in _request_internal
+    self._handle_request_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_http_client.py", line 763, in _handle_request_error
+    raise APIConnectionError(msg, should_retry=should_retry) from e
+stripe._error.APIConnectionError: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: ConnectionError: HTTPSConnectionPool(host='api.stripe.com', port=443): Max retries exceeded with url: /v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi (Caused by NameResolutionError("HTTPSConnection(host='api.stripe.com', port=443): Failed to resolve 'api.stripe.com' ([Errno -5] No address associated with hostname)")))
+ERROR 2026-03-18 23:33:59,569 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258643
+ERROR 2026-03-18 23:33:59,569 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 258643
+INFO 2026-03-18 23:34:54,588 _util log_info message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi
+INFO 2026-03-18 23:34:56,394 _util log_info message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3Ln3e92eZvKYlo2C0eUfv7bi response_code=404
+INFO 2026-03-18 23:34:56,408 _util log_info error_code=resource_missing error_message="No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'" error_param=id error_type=invalid_request_error message='Stripe v1 API error received'
+ERROR 2026-03-18 23:34:56,822 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 211, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 897, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 352, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_rB9ww4knmoh9By: No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'
+ERROR 2026-03-18 23:34:56,822 log log_message Internal Server Error: /api/v1/checkout/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/checkout/views.py", line 10, in get
+    charge = stripe.Charge.retrieve(
+        "ch_3Ln3e92eZvKYlo2C0eUfv7bi",
+        api_key=config("STRIPE_API_KEY")
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_charge.py", line 2651, in retrieve
+    instance.refresh()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 38, in refresh
+    return self._request_and_refresh("get", self.instance_url())
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_resource.py", line 128, in _request_and_refresh
+    obj = StripeObject._request(
+        self,
+    ...<4 lines>...
+        usage=usage,
+    )
+  File "/usr/local/lib/python3.13/site-packages/stripe/_stripe_object.py", line 424, in _request
+    return self._requestor.request(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<4 lines>...
+        usage=usage,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 211, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders, api_mode)
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 897, in _interpret_response
+    self.handle_error_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        rbody, rcode, resp.data, rheaders, api_mode
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/stripe/_api_requestor.py", line 352, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_rB9ww4knmoh9By: No such charge: 'ch_3Ln3e92eZvKYlo2C0eUfv7bi'
+ERROR 2026-03-18 23:34:56,886 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 128542
+ERROR 2026-03-18 23:34:56,886 log log_message "GET /api/v1/checkout/ HTTP/1.1" 500 128542
